@@ -1,0 +1,276 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+*{
+    font-family: 'Unica One', cursive;
+}
+
+/* visible and invisible content*/
+
+/*cursor: pointer; and  transition: all ease .xs ; */
+
+.invisible{
+    visibility: collapse;
+}
+
+.visible{
+    opacity: 100%;
+}
+
+/*light and dark theme*/
+
+.claro{
+    background-color: antiquewhite;
+    color: rgb(24, 22, 31);
+    transition: all ease .7s ;
+}
+
+.oscuro{
+    background-color: rgb(24, 22, 31);
+    color: white;
+    transition: ease-in-out .7s ;
+}
+
+/*general config*/
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+
+.theme_buttons button{
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+    width: 4.2em;
+    height: 4.2em;
+}
+
+.theme_buttons span{
+    display: block;
+    font-size: 2em;
+}
+
+.light{
+    background-color: orange;
+    z-index: 1;
+    margin-right: -4.5em;
+}
+
+.shadow span{
+    color: white;
+}
+
+
+
+.shadow{
+    background-color: rgb(107, 25, 179);
+}
+
+
+
+
+
+/*text*/
+
+.presentation{
+    margin-top: 10vh;
+    border-bottom: solid 1px;
+}
+
+
+.presentation span:hover{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.all_body{
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    width: 60vh;
+}
+
+.redes_link{
+    margin-top: 2em;
+    color: rgb(38, 139, 139);
+}
+
+.redes_link li{
+    margin: 1em 1em 1em 1em;
+}
+
+.g{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    user-select: none;
+    margin-top: 3em;
+}
+
+.g h2{
+    border-right: 4px solid;
+    width: 10em;
+    animation: typing 2s steps(17) alternate infinite,
+blink .5s infinite step-end alternate ;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0px;}
+}
+
+@keyframes blink{
+    50% {border-color: transparent;}
+}
+
+.p{
+    text-decoration:overline;
+}
+
+div h4{
+    text-decoration: overline;
+}
+
+hr{
+    color: black ;
+}
+
+.about{
+    margin-top: 3em;
+}
+
+
+
+
+/*enc*/
+
+header{
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px;
+}
+
+
+
+
+.name_and_logo .material-symbols-outlined{
+    font-size: 3.5em;
+}
+.name_and_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*inputs*/
+
+.inp_show{
+    width: 45vh;
+}
+
+.inp_resesive{
+    width: 30vh;
+}
+
+.comandos{
+    margin-top: 7vh;
+}
+
+.input_events_sec{
+    margin-top: 4em;
+}
+
+/*textos claros y oscuros*/
+
+.texto_claro_resaltado{
+    color: orange;
+}
+
+.texto_oscuro_resaltado{
+    color:  rgb(136, 0, 255);
+}
+
+/*cuerpo comandos*/
+
+.in{
+    visibility: collapse;
+    position: fixed;
+    transition: visibility 1s ease-in 1s;
+}
+
+.vi{
+    visibility: visible;
+    transition: visibility 1s ease-in-out 1s;
+}
+
+.image_comand{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 15vh;
+    border: solid 1px white;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.informacion{
+    margin-top: 5em;
+}
+
+/*footer*/
+
+.copy{
+    font-size: 2em;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    margin-top: 1em;
+}
+
+.email button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    height: 3em;
+    border-radius: 1em;
+    border: none;
+    background-color: rgb(23, 112, 109);
+    color: white;
+}
+
+.email_icon{
+    font-size: 1.3em;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.redes_link{
+    list-style: square;
+}
